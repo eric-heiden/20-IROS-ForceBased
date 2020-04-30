@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-ggdb",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-L${fileDirname}/../rai/lib",
+                "-lCore",
+                "-lKin",
+                "-lGui",
+                "-lGeo",
+                "-lKOMO",
+                "-lOptim",
+                "-lrt",
+                "-I${fileDirname}/../rai/rai",
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
