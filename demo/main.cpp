@@ -40,7 +40,9 @@ void solve(KOMO& komo, const Skeleton& S){
   }
 
 //  while(komo.displayTrajectory(2.5, true, true, 0, txt));
+while (true) {
   komo.displayTrajectory(1., false, true, "z.vid/", txt);
+}
 }
 
 //===========================================================================
@@ -355,20 +357,20 @@ int main(int argc,char **argv){
 
 //  rnd.clockSeed();
 
-#if 0
+// #if 0
   passive_ballBounce();
-  passive_elasticBounce();
-  passive_complementarySlide();
-  passive_stickyTumbling();
-#endif
+//   passive_elasticBounce();
+//   passive_complementarySlide();
+//   passive_stickyTumbling();
+// #endif
 
-  scenario(stableGrasp);
-  scenario(bookOnShelf);
-  scenario(billards);
-  scenario(liftRing);
-  scenario(forceGrasp);
-  scenario(pushWithStickFloat);
-  scenario(pushWithStick);
+//   scenario(stableGrasp);
+//   scenario(bookOnShelf);
+//   scenario(billards);
+//   scenario(liftRing);
+//   scenario(forceGrasp);
+//   scenario(pushWithStickFloat);
+//   scenario(pushWithStick);
 
   return 0;
 }
